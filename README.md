@@ -117,5 +117,5 @@ public class MyViewModel : BaseViewModel
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 ## Credits
-- [Material Design Icons](https://pictogrammers.com/library/mdi/)
-- [Material Design Color Palette](https://www.materialpalette.com/)
+- https://pictogrammers.com/library/mdi/
+- https://m2.material.io/
