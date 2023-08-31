@@ -1,0 +1,7 @@
+﻿<Application x:Class="Test.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Test"
+             xmlns:fui="clr-namespace:FloxelUI;assembly=FloxelUI"
+             StartupUri="MainWindow.xaml">
+</Application>
