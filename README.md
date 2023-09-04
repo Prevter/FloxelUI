@@ -94,6 +94,7 @@ public class MyViewModel : BaseViewModel
 - [x] Theme support (Dark, Light)
 - [x] Application State manager (utility for saving and loading application state)
 - [x] Custom MessageBox (with support for themes)
+- [x] Spinning Progress Circle
 - [x] Material Design Icons ([full icon list](https://pictogrammers.com/library/mdi/))
 - [x] Converters for binding values
 - [x] Useful extensions for build-in types

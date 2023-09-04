@@ -5,12 +5,18 @@
     <Compile Update="Common\MessageBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Controls\CircularProgress.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Controls\Icon.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Common\MessageBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\CircularProgress.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Controls\Icon.xaml">

@@ -45,7 +45,7 @@ public static class ObservableCollectionExtensions
 	}
 }
 
-public static class RandomArrayFillExtensions
+public static class FillArrayExtensions
 {
 	public static readonly Random Random = new();
 
@@ -65,5 +65,23 @@ public static class RandomArrayFillExtensions
 	{
 		for (int i = 0; i < array.Length; i++)
 			array[i] = Random.NextDouble() * (max - min) + min;
+	}
+
+	public static void FillRange(this int[] array, int start = 0, int step = 1)
+	{
+		for (int i = 0; i < array.Length; i++)
+			array[i] = start + i * step;
+	}
+
+	public static void FillRange(this float[] array, float start = 0, float step = 1)
+	{
+		for (int i = 0; i < array.Length; i++)
+			array[i] = start + i * step;
+	}
+
+	public static void FillRange(this double[] array, double start = 0, double step = 1)
+	{
+		for (int i = 0; i < array.Length; i++)
+			array[i] = start + i * step;
 	}
 }
