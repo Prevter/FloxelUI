@@ -7,16 +7,22 @@ It is also designed to be customizable, so you can change the colors and other t
 Library also comes with many utilities that make it easier to use WPF, such as a `RelayCommand` class that can be used to bind commands to buttons, and a `BaseViewModel` class that can be used to bind data to the UI. You can check full list of utilities in the [Features](#features) section.
 
 ## How do I use it?
-First, you'll need to reference the library in your project. You can do this by adding a reference to the DLL file, or by adding the project to your solution and referencing it that way.  
-Then, you'll need to initialize the library. You can do this by calling `Floxel.InitApplication();` in your `App.xaml.cs` file.  
-```csharp
-public partial class App : Application
-{
-	public App()
-	{
-		Floxel.InitApplication();
-	}
-}
+First, you'll need to reference the library in your project. You can do this by adding a nuget package to your project (currently, only local nuget package is available, check [releases](https://github.com/prevter/floxelui/releases) for more info).    
+Then, you'll need to initialize the library. You can do this by adding a reference to the library in your `App.xaml` file.
+```xml
+<Application x:Class="MyApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:fui="clr-namespace:FloxelLib;assembly=Floxel"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <fui:Resources/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
 ```
 Next, you'll need to also initialize every window that you want to use the library in. You can do this by calling `Floxel.InitWindow(this);` in the constructor of the window.
 ```csharp
@@ -29,7 +35,18 @@ public partial class MainWindow : Window
 	}
 }
 ```
-Doing all of this will make sure all styles, controls and other things are loaded correctly.
+Doing all of this will make sure all styles, controls and other things are loaded correctly.  
+Alternatively, you can just use custom Window class that is provided by the library.  
+```xml
+<fuic:Window x:Class="MyApp.MainWindow"
+             xmlns:fuic="clr-namespace:FloxelLib.Controls;assembly=Floxel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <!-- Your content here -->
+    </Grid>
+</fuic:Window>
+```
 
 ## Customization
 You can easily change app theme by calling `Floxel.SetTheme(theme);` from anywhere in your code.  
@@ -74,18 +91,15 @@ Here's an example of how to use it:
 ```csharp
 public class MyViewModel : BaseViewModel
 {
-    private RelayCommand _myCommand;
-    public RelayCommand MyCommand => _myCommand ??= new RelayCommand((arg) => {
-        // arg is the CommandParameter you set in XAML
+    [RelayCommand]
+    private void Test(object arg) {
         MessageBox.Show(arg.ToString());
-    });
+    }
 }
 ```
 ```xml
-<Button Content="Click me!" Command="{Binding MyCommand}" CommandParameter="Hello World!"/>
+<Button Content="Click me!" Command="{Binding TestCommand}" CommandParameter="Hello World!"/>
 ```
-
-
 
 ## Features
 - [x] Material Design
@@ -106,12 +120,12 @@ public class MyViewModel : BaseViewModel
 - [x] RadioButton
 - [x] TabControl
 - [x] Button 
+- [x] ScrollBar
 - [ ] TextBox
 - [ ] CheckBox
 - [ ] ComboBox
 - [ ] Slider
 - [ ] ProgressBar
-- [ ] ScrollBar
 - more coming soon...
 
 ## License

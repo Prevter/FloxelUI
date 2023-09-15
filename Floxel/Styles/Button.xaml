@@ -1,0 +1,357 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="Button" x:Key="PrimaryTextButton">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Padding" Value="15,6"/>
+        <Setter Property="BorderBrush" Value="#00000000"/>
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="FontWeight" Value="DemiBold"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Foreground" Value="{DynamicResource Primary}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" UseLayoutRounding="True"
+                            BorderThickness="{TemplateBinding BorderThickness}" 
+                            Background="{TemplateBinding Background}"
+                            CornerRadius="4" Padding="{TemplateBinding Padding}">
+                        <ContentPresenter HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      TextElement.Foreground="{TemplateBinding Foreground}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource PrimaryTextButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource PrimaryTextButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="{DynamicResource PrimaryTextButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="Button" x:Key="PrimaryOutlinedButton">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Outline}"/>
+        <Setter Property="Foreground" Value="{DynamicResource Primary}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="15,6"/>
+        <Setter Property="FontWeight" Value="DemiBold"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" UseLayoutRounding="True"
+                            BorderThickness="{TemplateBinding BorderThickness}" 
+                            Background="{TemplateBinding Background}"
+                            CornerRadius="4" Padding="{TemplateBinding Padding}">
+                        <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          TextElement.Foreground="{TemplateBinding Foreground}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource PrimaryOutlinedButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource PrimaryOutlinedButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="{DynamicResource PrimaryOutlinedButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="Button" x:Key="PrimaryContainedButton">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Background" Value="{DynamicResource Primary}"/>
+        <Setter Property="Foreground" Value="{DynamicResource OnPrimary}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="16,6"/>
+        <Setter Property="FontWeight" Value="DemiBold"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" UseLayoutRounding="True"
+                            BorderBrush="{TemplateBinding Background}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="4" Padding="{TemplateBinding Padding}">
+                        <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          TextElement.Foreground="{TemplateBinding Foreground}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource PrimaryContainedButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource PrimaryContainedButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Background" Value="{DynamicResource PrimaryContainedButtonDisabledBackground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource PrimaryContainedButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- Secondary Button -->
+    <Style TargetType="Button" x:Key="SecondaryTextButton" BasedOn="{StaticResource PrimaryTextButton}">
+        <Setter Property="Foreground" Value="{DynamicResource Secondary}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SecondaryTextButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SecondaryTextButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="{DynamicResource SecondaryTextButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="Button" x:Key="SecondaryOutlinedButton" BasedOn="{StaticResource PrimaryOutlinedButton}">
+        <Setter Property="Foreground" Value="{DynamicResource Secondary}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SecondaryOutlinedButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SecondaryOutlinedButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="{DynamicResource SecondaryOutlinedButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="Button" x:Key="SecondaryContainedButton" BasedOn="{StaticResource PrimaryContainedButton}">
+        <Setter Property="Background" Value="{DynamicResource Secondary}"/>
+        <Setter Property="Foreground" Value="{DynamicResource OnSecondary}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SecondaryContainedButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SecondaryContainedButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Background" Value="{DynamicResource SecondaryContainedButtonDisabledBackground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource SecondaryContainedButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    <!-- Error Button -->
+    <Style TargetType="Button" x:Key="ErrorTextButton" BasedOn="{StaticResource PrimaryTextButton}">
+        <Setter Property="Foreground" Value="{DynamicResource Error}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ErrorTextButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ErrorTextButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="{DynamicResource ErrorTextButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="Button" x:Key="ErrorOutlinedButton" BasedOn="{StaticResource PrimaryOutlinedButton}">
+        <Setter Property="Foreground" Value="{DynamicResource Error}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ErrorOutlinedButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ErrorOutlinedButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="{DynamicResource ErrorOutlinedButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="Button" x:Key="ErrorContainedButton" BasedOn="{StaticResource PrimaryContainedButton}">
+        <Setter Property="Background" Value="{DynamicResource Error}"/>
+        <Setter Property="Foreground" Value="{DynamicResource OnError}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ErrorContainedButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ErrorContainedButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Background" Value="{DynamicResource ErrorContainedButtonDisabledBackground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource ErrorContainedButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    <!-- Warning Button -->
+    <Style TargetType="Button" x:Key="WarningTextButton" BasedOn="{StaticResource PrimaryTextButton}">
+        <Setter Property="Foreground" Value="{DynamicResource Warning}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource WarningTextButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource WarningTextButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="{DynamicResource WarningTextButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="Button" x:Key="WarningOutlinedButton" BasedOn="{StaticResource PrimaryOutlinedButton}">
+        <Setter Property="Foreground" Value="{DynamicResource Warning}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource WarningOutlinedButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource WarningOutlinedButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="{DynamicResource WarningOutlinedButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="Button" x:Key="WarningContainedButton" BasedOn="{StaticResource PrimaryContainedButton}">
+        <Setter Property="Background" Value="{DynamicResource Warning}"/>
+        <Setter Property="Foreground" Value="{DynamicResource OnWarning}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource WarningContainedButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource WarningContainedButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Background" Value="{DynamicResource WarningContainedButtonDisabledBackground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource WarningContainedButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    <!-- Success Button -->
+    <Style TargetType="Button" x:Key="SuccessTextButton" BasedOn="{StaticResource PrimaryTextButton}">
+        <Setter Property="Foreground" Value="{DynamicResource Success}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SuccessTextButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SuccessTextButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="{DynamicResource SuccessTextButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="Button" x:Key="SuccessOutlinedButton" BasedOn="{StaticResource PrimaryOutlinedButton}">
+        <Setter Property="Foreground" Value="{DynamicResource Success}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SuccessOutlinedButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SuccessOutlinedButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="{DynamicResource SuccessOutlinedButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="Button" x:Key="SuccessContainedButton" BasedOn="{StaticResource PrimaryContainedButton}">
+        <Setter Property="Background" Value="{DynamicResource Success}"/>
+        <Setter Property="Foreground" Value="{DynamicResource OnSuccess}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SuccessContainedButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SuccessContainedButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Background" Value="{DynamicResource SuccessContainedButtonDisabledBackground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource SuccessContainedButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    <!-- Info Button -->
+    <Style TargetType="Button" x:Key="InfoTextButton" BasedOn="{StaticResource PrimaryTextButton}">
+        <Setter Property="Foreground" Value="{DynamicResource Info}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource InfoTextButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource InfoTextButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="{DynamicResource InfoTextButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="Button" x:Key="InfoOutlinedButton" BasedOn="{StaticResource PrimaryOutlinedButton}">
+        <Setter Property="Foreground" Value="{DynamicResource Info}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource InfoOutlinedButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource InfoOutlinedButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="{DynamicResource InfoOutlinedButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="Button" x:Key="InfoContainedButton" BasedOn="{StaticResource PrimaryContainedButton}">
+        <Setter Property="Background" Value="{DynamicResource Info}"/>
+        <Setter Property="Foreground" Value="{DynamicResource OnInfo}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource InfoContainedButtonHoverBackground}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource InfoContainedButtonPressedBackground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Background" Value="{DynamicResource InfoContainedButtonDisabledBackground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource InfoContainedButtonDisabledColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="Button" BasedOn="{StaticResource PrimaryContainedButton}"/>
+</ResourceDictionary>

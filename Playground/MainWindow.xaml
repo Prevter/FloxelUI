@@ -1,0 +1,39 @@
+﻿<fuic:Window x:Class="FloxelPlayground.MainWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:FloxelPlayground"
+             xmlns:fuic="clr-namespace:FloxelLib.Controls;assembly=Floxel"
+             mc:Ignorable="d"
+             Title="Floxel Playground" Height="450" Width="800">
+    <Window.DataContext>
+        <local:MainViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ComboBox FontSize="18" Margin="8,8"
+                  ItemsSource="{Binding Pages}" SelectedIndex="{Binding SelectedPageIndex}" />
+
+        <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal" Margin="8,8" HorizontalAlignment="Right">
+            <Button Command="{Binding ToggleDarkModeCommand}" Padding="4" Style="{DynamicResource PrimaryTextButton}">
+                <Button.Content>
+                    <fuic:Icon Kind="{Binding DarkModeToggleIcon}" Width="20" Height="20" />
+                </Button.Content>
+            </Button>
+        </StackPanel>
+
+        <Frame Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="0" VerticalAlignment="Stretch" Margin="12"
+               NavigationUIVisibility="Hidden" HorizontalAlignment="Stretch"
+               Source="{Binding SelectedPageUri}"/>
+    </Grid>
+</fuic:Window>

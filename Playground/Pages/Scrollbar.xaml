@@ -1,0 +1,108 @@
+﻿<fuic:Page x:Class="FloxelPlayground.Pages.Scrollbar"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:fuic="clr-namespace:FloxelLib.Controls;assembly=Floxel"
+           mc:Ignorable="d" Title="Scrollbar">
+    <Grid>
+        <ScrollViewer HorizontalScrollBarVisibility="Visible">
+            <StackPanel>
+                <TextBlock Text="Ut consequuntur illum ut error doloribus ea beatae omnis." FontSize="34" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Lorem ipsum dolor sit amet. Vel molestiae quod qui tempore facilisEt odio eos tempore veritatis quo esse labore et minus rerum cum eveniet eaque. Aut repellat eiusEst iusto qui mollitia sunt. Est culpa quae ea voluptatibus voluptatibusSed praesentium et adipisci alias et facere nobis ut blanditiis asperiores et quaerat deserunt. Cum corporis quibusdam et distinctio omnisCum voluptatem est voluptates ipsa aut dolorem obcaecati quo autem quas. Ut repellat explicaboAd veritatis qui excepturi doloribus qui deleniti itaque in consequatur saepe aut Quis vitae qui natus accusantium. Ut asperiores saepe"/>
+                    <Run Text="Eum voluptas quo natus velit sed commodi nihil" FontStyle="Italic"/>
+                    <Run Text="eum omnis accusamus non galisum quidem eum necessitatibus possimus. Cum explicabo tempore aut veniam recusandaeab ipsa sed omnis sunt? Eos molestias aperiamNon voluptatem aut eligendi voluptatem et enim minima a officiis iusto sit voluptatibus enim. Et repellendus vero rem molestias aliquamQui laudantium ut veniam nihil? Nam natus cumqueNon incidunt eum ullam velit. Eum laborum enim qui repudiandae accusamussed ratione."/>
+                </TextBlock>
+                <TextBlock Text="Et expedita sequi 33 sequi enim sed numquam labore." FontSize="30" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Ut excepturi reiciendisSit accusantium sit repellat cumque. Et doloribus delectus qui dolorem laborumet fugit. Aut delectus molestias"/>
+                    <Run Text="In aspernatur et distinctio accusantium et voluptas dolor" FontWeight="Bold"/>
+                    <Run Text="id sunt consequatur et voluptas deleniti est corporis delectus? Non molestiae fugiat nam saepe cupiditateea tempora. Et excepturi asperioresEst corporis aut cumque doloremque est voluptatibus exercitationem est debitis necessitatibus qui fugit blanditiis. Ut labore quis vel enim errorQui nobis ea autem exercitationem! Ut blanditiis nemoEum natus qui voluptas tenetur aut voluptatum adipisci sit nihil sunt! Et ducimus corrupti sit ullam temporibusut iusto eum debitis nesciunt. Et maiores autemEt tempora et labore dolor et quos dicta qui nemo quae. Sed dolor providentSit esse At distinctio veritatis nam quae nemo id quod placeat. Ut error saepeEa asperiores non iusto maxime."/>
+                </TextBlock>
+                <TextBlock Text="Sit ratione adipisci aut earum tempore." FontSize="28" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Aut Quis recusandaeEt aspernatur non tempora dignissimos ab aliquam temporibus id omnis nisi qui iste debitis. Ut perferendis fugit aut voluptas laboreet dignissimos. Est reiciendis sequi et recusandae expeditaid repellendus. Aut aperiam repudiandae cum soluta odioUt expedita ut culpa illum non tempore enim nam perferendis quisquam qui reiciendis mollitia. Est distinctio rerumQui iste vel sequi cumque 33 nobis error. Et tempora consequatur ut culpa itaqueEos atque et dicta modi a excepturi earum non aliquid impedit ex possimus veritatis. Eos aliquid suscipit"/>
+                    <Run Text="Ut fugit qui possimus fuga." FontWeight="Bold"/>
+                    <Run Text="Est nostrum isteSit soluta rem maxime ipsa aut aspernatur ipsum."/>
+                </TextBlock>
+                
+                <TextBlock Text="Ut consequuntur illum ut error doloribus ea beatae omnis." FontSize="34" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Lorem ipsum dolor sit amet. Vel molestiae quod qui tempore facilisEt odio eos tempore veritatis quo esse labore et minus rerum cum eveniet eaque. Aut repellat eiusEst iusto qui mollitia sunt. Est culpa quae ea voluptatibus voluptatibusSed praesentium et adipisci alias et facere nobis ut blanditiis asperiores et quaerat deserunt. Cum corporis quibusdam et distinctio omnisCum voluptatem est voluptates ipsa aut dolorem obcaecati quo autem quas. Ut repellat explicaboAd veritatis qui excepturi doloribus qui deleniti itaque in consequatur saepe aut Quis vitae qui natus accusantium. Ut asperiores saepe"/>
+                    <Run Text="Eum voluptas quo natus velit sed commodi nihil" FontStyle="Italic"/>
+                    <Run Text="eum omnis accusamus non galisum quidem eum necessitatibus possimus. Cum explicabo tempore aut veniam recusandaeab ipsa sed omnis sunt? Eos molestias aperiamNon voluptatem aut eligendi voluptatem et enim minima a officiis iusto sit voluptatibus enim. Et repellendus vero rem molestias aliquamQui laudantium ut veniam nihil? Nam natus cumqueNon incidunt eum ullam velit. Eum laborum enim qui repudiandae accusamussed ratione."/>
+                </TextBlock>
+                <TextBlock Text="Et expedita sequi 33 sequi enim sed numquam labore." FontSize="30" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Ut excepturi reiciendisSit accusantium sit repellat cumque. Et doloribus delectus qui dolorem laborumet fugit. Aut delectus molestias"/>
+                    <Run Text="In aspernatur et distinctio accusantium et voluptas dolor" FontWeight="Bold"/>
+                    <Run Text="id sunt consequatur et voluptas deleniti est corporis delectus? Non molestiae fugiat nam saepe cupiditateea tempora. Et excepturi asperioresEst corporis aut cumque doloremque est voluptatibus exercitationem est debitis necessitatibus qui fugit blanditiis. Ut labore quis vel enim errorQui nobis ea autem exercitationem! Ut blanditiis nemoEum natus qui voluptas tenetur aut voluptatum adipisci sit nihil sunt! Et ducimus corrupti sit ullam temporibusut iusto eum debitis nesciunt. Et maiores autemEt tempora et labore dolor et quos dicta qui nemo quae. Sed dolor providentSit esse At distinctio veritatis nam quae nemo id quod placeat. Ut error saepeEa asperiores non iusto maxime."/>
+                </TextBlock>
+                <TextBlock Text="Sit ratione adipisci aut earum tempore." FontSize="28" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Aut Quis recusandaeEt aspernatur non tempora dignissimos ab aliquam temporibus id omnis nisi qui iste debitis. Ut perferendis fugit aut voluptas laboreet dignissimos. Est reiciendis sequi et recusandae expeditaid repellendus. Aut aperiam repudiandae cum soluta odioUt expedita ut culpa illum non tempore enim nam perferendis quisquam qui reiciendis mollitia. Est distinctio rerumQui iste vel sequi cumque 33 nobis error. Et tempora consequatur ut culpa itaqueEos atque et dicta modi a excepturi earum non aliquid impedit ex possimus veritatis. Eos aliquid suscipit"/>
+                    <Run Text="Ut fugit qui possimus fuga." FontWeight="Bold"/>
+                    <Run Text="Est nostrum isteSit soluta rem maxime ipsa aut aspernatur ipsum."/>
+                </TextBlock>
+                
+                <TextBlock Text="Ut consequuntur illum ut error doloribus ea beatae omnis." FontSize="34" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Lorem ipsum dolor sit amet. Vel molestiae quod qui tempore facilisEt odio eos tempore veritatis quo esse labore et minus rerum cum eveniet eaque. Aut repellat eiusEst iusto qui mollitia sunt. Est culpa quae ea voluptatibus voluptatibusSed praesentium et adipisci alias et facere nobis ut blanditiis asperiores et quaerat deserunt. Cum corporis quibusdam et distinctio omnisCum voluptatem est voluptates ipsa aut dolorem obcaecati quo autem quas. Ut repellat explicaboAd veritatis qui excepturi doloribus qui deleniti itaque in consequatur saepe aut Quis vitae qui natus accusantium. Ut asperiores saepe"/>
+                    <Run Text="Eum voluptas quo natus velit sed commodi nihil" FontStyle="Italic"/>
+                    <Run Text="eum omnis accusamus non galisum quidem eum necessitatibus possimus. Cum explicabo tempore aut veniam recusandaeab ipsa sed omnis sunt? Eos molestias aperiamNon voluptatem aut eligendi voluptatem et enim minima a officiis iusto sit voluptatibus enim. Et repellendus vero rem molestias aliquamQui laudantium ut veniam nihil? Nam natus cumqueNon incidunt eum ullam velit. Eum laborum enim qui repudiandae accusamussed ratione."/>
+                </TextBlock>
+                <TextBlock Text="Et expedita sequi 33 sequi enim sed numquam labore." FontSize="30" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Ut excepturi reiciendisSit accusantium sit repellat cumque. Et doloribus delectus qui dolorem laborumet fugit. Aut delectus molestias"/>
+                    <Run Text="In aspernatur et distinctio accusantium et voluptas dolor" FontWeight="Bold"/>
+                    <Run Text="id sunt consequatur et voluptas deleniti est corporis delectus? Non molestiae fugiat nam saepe cupiditateea tempora. Et excepturi asperioresEst corporis aut cumque doloremque est voluptatibus exercitationem est debitis necessitatibus qui fugit blanditiis. Ut labore quis vel enim errorQui nobis ea autem exercitationem! Ut blanditiis nemoEum natus qui voluptas tenetur aut voluptatum adipisci sit nihil sunt! Et ducimus corrupti sit ullam temporibusut iusto eum debitis nesciunt. Et maiores autemEt tempora et labore dolor et quos dicta qui nemo quae. Sed dolor providentSit esse At distinctio veritatis nam quae nemo id quod placeat. Ut error saepeEa asperiores non iusto maxime."/>
+                </TextBlock>
+                <TextBlock Text="Sit ratione adipisci aut earum tempore." FontSize="28" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Aut Quis recusandaeEt aspernatur non tempora dignissimos ab aliquam temporibus id omnis nisi qui iste debitis. Ut perferendis fugit aut voluptas laboreet dignissimos. Est reiciendis sequi et recusandae expeditaid repellendus. Aut aperiam repudiandae cum soluta odioUt expedita ut culpa illum non tempore enim nam perferendis quisquam qui reiciendis mollitia. Est distinctio rerumQui iste vel sequi cumque 33 nobis error. Et tempora consequatur ut culpa itaqueEos atque et dicta modi a excepturi earum non aliquid impedit ex possimus veritatis. Eos aliquid suscipit"/>
+                    <Run Text="Ut fugit qui possimus fuga." FontWeight="Bold"/>
+                    <Run Text="Est nostrum isteSit soluta rem maxime ipsa aut aspernatur ipsum."/>
+                </TextBlock>
+                
+                <TextBlock Text="Ut consequuntur illum ut error doloribus ea beatae omnis." FontSize="34" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Lorem ipsum dolor sit amet. Vel molestiae quod qui tempore facilisEt odio eos tempore veritatis quo esse labore et minus rerum cum eveniet eaque. Aut repellat eiusEst iusto qui mollitia sunt. Est culpa quae ea voluptatibus voluptatibusSed praesentium et adipisci alias et facere nobis ut blanditiis asperiores et quaerat deserunt. Cum corporis quibusdam et distinctio omnisCum voluptatem est voluptates ipsa aut dolorem obcaecati quo autem quas. Ut repellat explicaboAd veritatis qui excepturi doloribus qui deleniti itaque in consequatur saepe aut Quis vitae qui natus accusantium. Ut asperiores saepe"/>
+                    <Run Text="Eum voluptas quo natus velit sed commodi nihil" FontStyle="Italic"/>
+                    <Run Text="eum omnis accusamus non galisum quidem eum necessitatibus possimus. Cum explicabo tempore aut veniam recusandaeab ipsa sed omnis sunt? Eos molestias aperiamNon voluptatem aut eligendi voluptatem et enim minima a officiis iusto sit voluptatibus enim. Et repellendus vero rem molestias aliquamQui laudantium ut veniam nihil? Nam natus cumqueNon incidunt eum ullam velit. Eum laborum enim qui repudiandae accusamussed ratione."/>
+                </TextBlock>
+                <TextBlock Text="Et expedita sequi 33 sequi enim sed numquam labore." FontSize="30" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Ut excepturi reiciendisSit accusantium sit repellat cumque. Et doloribus delectus qui dolorem laborumet fugit. Aut delectus molestias"/>
+                    <Run Text="In aspernatur et distinctio accusantium et voluptas dolor" FontWeight="Bold"/>
+                    <Run Text="id sunt consequatur et voluptas deleniti est corporis delectus? Non molestiae fugiat nam saepe cupiditateea tempora. Et excepturi asperioresEst corporis aut cumque doloremque est voluptatibus exercitationem est debitis necessitatibus qui fugit blanditiis. Ut labore quis vel enim errorQui nobis ea autem exercitationem! Ut blanditiis nemoEum natus qui voluptas tenetur aut voluptatum adipisci sit nihil sunt! Et ducimus corrupti sit ullam temporibusut iusto eum debitis nesciunt. Et maiores autemEt tempora et labore dolor et quos dicta qui nemo quae. Sed dolor providentSit esse At distinctio veritatis nam quae nemo id quod placeat. Ut error saepeEa asperiores non iusto maxime."/>
+                </TextBlock>
+                <TextBlock Text="Sit ratione adipisci aut earum tempore." FontSize="28" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Aut Quis recusandaeEt aspernatur non tempora dignissimos ab aliquam temporibus id omnis nisi qui iste debitis. Ut perferendis fugit aut voluptas laboreet dignissimos. Est reiciendis sequi et recusandae expeditaid repellendus. Aut aperiam repudiandae cum soluta odioUt expedita ut culpa illum non tempore enim nam perferendis quisquam qui reiciendis mollitia. Est distinctio rerumQui iste vel sequi cumque 33 nobis error. Et tempora consequatur ut culpa itaqueEos atque et dicta modi a excepturi earum non aliquid impedit ex possimus veritatis. Eos aliquid suscipit"/>
+                    <Run Text="Ut fugit qui possimus fuga." FontWeight="Bold"/>
+                    <Run Text="Est nostrum isteSit soluta rem maxime ipsa aut aspernatur ipsum."/>
+                </TextBlock>
+                
+                <TextBlock Text="Ut consequuntur illum ut error doloribus ea beatae omnis." FontSize="34" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Lorem ipsum dolor sit amet. Vel molestiae quod qui tempore facilisEt odio eos tempore veritatis quo esse labore et minus rerum cum eveniet eaque. Aut repellat eiusEst iusto qui mollitia sunt. Est culpa quae ea voluptatibus voluptatibusSed praesentium et adipisci alias et facere nobis ut blanditiis asperiores et quaerat deserunt. Cum corporis quibusdam et distinctio omnisCum voluptatem est voluptates ipsa aut dolorem obcaecati quo autem quas. Ut repellat explicaboAd veritatis qui excepturi doloribus qui deleniti itaque in consequatur saepe aut Quis vitae qui natus accusantium. Ut asperiores saepe"/>
+                    <Run Text="Eum voluptas quo natus velit sed commodi nihil" FontStyle="Italic"/>
+                    <Run Text="eum omnis accusamus non galisum quidem eum necessitatibus possimus. Cum explicabo tempore aut veniam recusandaeab ipsa sed omnis sunt? Eos molestias aperiamNon voluptatem aut eligendi voluptatem et enim minima a officiis iusto sit voluptatibus enim. Et repellendus vero rem molestias aliquamQui laudantium ut veniam nihil? Nam natus cumqueNon incidunt eum ullam velit. Eum laborum enim qui repudiandae accusamussed ratione."/>
+                </TextBlock>
+                <TextBlock Text="Et expedita sequi 33 sequi enim sed numquam labore." FontSize="30" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Ut excepturi reiciendisSit accusantium sit repellat cumque. Et doloribus delectus qui dolorem laborumet fugit. Aut delectus molestias"/>
+                    <Run Text="In aspernatur et distinctio accusantium et voluptas dolor" FontWeight="Bold"/>
+                    <Run Text="id sunt consequatur et voluptas deleniti est corporis delectus? Non molestiae fugiat nam saepe cupiditateea tempora. Et excepturi asperioresEst corporis aut cumque doloremque est voluptatibus exercitationem est debitis necessitatibus qui fugit blanditiis. Ut labore quis vel enim errorQui nobis ea autem exercitationem! Ut blanditiis nemoEum natus qui voluptas tenetur aut voluptatum adipisci sit nihil sunt! Et ducimus corrupti sit ullam temporibusut iusto eum debitis nesciunt. Et maiores autemEt tempora et labore dolor et quos dicta qui nemo quae. Sed dolor providentSit esse At distinctio veritatis nam quae nemo id quod placeat. Ut error saepeEa asperiores non iusto maxime."/>
+                </TextBlock>
+                <TextBlock Text="Sit ratione adipisci aut earum tempore." FontSize="28" FontWeight="Bold"/>
+                <TextBlock>
+                    <Run Text="Aut Quis recusandaeEt aspernatur non tempora dignissimos ab aliquam temporibus id omnis nisi qui iste debitis. Ut perferendis fugit aut voluptas laboreet dignissimos. Est reiciendis sequi et recusandae expeditaid repellendus. Aut aperiam repudiandae cum soluta odioUt expedita ut culpa illum non tempore enim nam perferendis quisquam qui reiciendis mollitia. Est distinctio rerumQui iste vel sequi cumque 33 nobis error. Et tempora consequatur ut culpa itaqueEos atque et dicta modi a excepturi earum non aliquid impedit ex possimus veritatis. Eos aliquid suscipit"/>
+                    <Run Text="Ut fugit qui possimus fuga." FontWeight="Bold"/>
+                    <Run Text="Est nostrum isteSit soluta rem maxime ipsa aut aspernatur ipsum."/>
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</fuic:Page>

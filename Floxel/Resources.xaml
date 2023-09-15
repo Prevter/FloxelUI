@@ -1,0 +1,7 @@
+﻿<ResourceDictionary x:Class="FloxelLib.Resources"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:FloxelLib">
+    <local:InverseBooleanConverter x:Key="InverseBooleanConverter" />
+    <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+</ResourceDictionary>

@@ -1,0 +1,31 @@
+﻿<fuic:Page x:Class="FloxelPlayground.Pages.MessageBox"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:vm="clr-namespace:FloxelPlayground.ViewModels"
+           xmlns:fuic="clr-namespace:FloxelLib.Controls;assembly=Floxel"
+           mc:Ignorable="d" Title="MessageBox">
+    <Page.DataContext>
+        <vm:MessageBoxViewModel />
+    </Page.DataContext>
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Message:"/>
+            <TextBox Text="{Binding MessageBoxMessage}"/>
+            
+            <TextBlock Text="Caption:"/>
+            <TextBox Text="{Binding MessageBoxTitle}"/>
+            
+            <TextBlock Text="Icon:"/>
+            <ComboBox SelectedItem="{Binding MessageBoxImage}" ItemsSource="{Binding MessageBoxImages}"/>
+            
+            <Separator/>
+            <StackPanel Orientation="Horizontal">
+                <Button Command="{Binding OpenMessageBoxCommand}" Content="OPEN" />
+                <Button Command="{Binding OpenDefaultMessageBoxCommand}" Content="CLASSIC" Style="{DynamicResource PrimaryOutlinedButton}"/>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</fuic:Page>

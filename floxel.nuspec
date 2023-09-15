@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <version>1.0.4</version>
+    <authors>Prevter</authors>
+    <licenseUrl>https://github.com/Prevter/FloxelUI/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/Prevter/FloxelUI</projectUrl>
+    <dependencies>
+      <dependency id="Material.Icons" version="2.0.11"/>
+    </dependencies>
+    <id>Floxel</id>
+    <title>Floxel</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Toolkit for making WPF applications</description>
+    <summary>Material design toolkit for WPF with custom controls, MVVM and more</summary>
+    <copyright>Copyright 2023 Prevter</copyright>
+    <language>en-US</language>
+  </metadata>
+  <files>
+    <file src="README.md" target="README.md" />
+    <file src="Floxel\bin\Release\net7.0-windows\Floxel.dll" target="lib\net7.0" />
+    <file src="Floxel\bin\Release\net6.0-windows\Floxel.dll" target="lib\net6.0" />
+    <file src="Floxel.Generator\bin\Release\netstandard2.0\Floxel.Generator.dll" target="analyzers\dotnet\cs" />
+  </files>
+</package>
