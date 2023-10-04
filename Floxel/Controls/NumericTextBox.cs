@@ -1,15 +1,12 @@
-﻿using System;
-using System.Globalization;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
 using System.Windows.Input;
 
 namespace FloxelLib.Controls;
 
 public sealed partial class NumericTextBox : TextBox
 {
-	public NumericTextBox() {}
+	public NumericTextBox() { }
 
 	public bool IsDecimal
 	{
@@ -19,7 +16,7 @@ public sealed partial class NumericTextBox : TextBox
 
 	public static readonly DependencyProperty IsDecimalProperty =
 		DependencyProperty.Register(nameof(IsDecimal), typeof(bool), typeof(NumericTextBox), new PropertyMetadata(false));
-	
+
 	protected override void OnPreviewTextInput(TextCompositionEventArgs e)
 	{
 		e.Handled = !AreAllValidNumericChars(e.Text);

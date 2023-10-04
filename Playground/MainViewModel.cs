@@ -1,11 +1,10 @@
-﻿using System;
+﻿using FloxelLib;
+using FloxelLib.Controls;
+using FloxelLib.MVVM;
+using System;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Reflection;
-using FloxelLib;
-using FloxelLib.MVVM;
-using System.Windows;
-using FloxelLib.Controls;
 
 namespace FloxelPlayground;
 
@@ -17,7 +16,7 @@ public sealed partial class MainViewModel : BaseViewModel
 		get => _darkModeToggleIcon;
 		set => SetField(ref _darkModeToggleIcon, value);
 	}
-	
+
 	[RelayCommand]
 	private void ToggleDarkMode()
 	{
@@ -32,9 +31,9 @@ public sealed partial class MainViewModel : BaseViewModel
 			Floxel.SetTheme(Floxel.DarkTheme);
 		}
 	}
-	
+
 	public ObservableCollection<PageOption> Pages { get; set; } = new();
-	
+
 	private int _selectedPageIndex = 0;
 	public int SelectedPageIndex
 	{
@@ -45,7 +44,7 @@ public sealed partial class MainViewModel : BaseViewModel
 			SelectedPageUri = Pages[value].Uri;
 		}
 	}
-	
+
 	private string _selectedPageUri = "";
 	public string SelectedPageUri
 	{
@@ -65,9 +64,9 @@ public sealed partial class MainViewModel : BaseViewModel
 			var page = (Page?)Activator.CreateInstance(pageType);
 			if (page is null) continue;
 
-			Pages.Add(new(page.Title, $"Pages/{pageType.Name}.xaml" ));
+			Pages.Add(new(page.Title, $"Pages/{pageType.Name}.xaml"));
 		}
-		
+
 		SelectedPageUri = Pages[0].Uri;
 	}
 
@@ -76,7 +75,7 @@ public sealed partial class MainViewModel : BaseViewModel
 		public string Title { get; set; } = "";
 		public string Uri { get; set; } = "";
 		public override string ToString() => Title;
-		
+
 		public PageOption(string title, string uri)
 		{
 			Title = title;

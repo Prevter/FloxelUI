@@ -1,5 +1,4 @@
-﻿using FloxelLib;
-using FloxelLib.Controls;
+﻿using FloxelLib.Controls;
 
 namespace FloxelPlayground
 {

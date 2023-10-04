@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
     <authors>Prevter</authors>
     <licenseUrl>https://github.com/Prevter/FloxelUI/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/Prevter/FloxelUI</projectUrl>

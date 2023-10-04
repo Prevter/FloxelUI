@@ -58,7 +58,7 @@ public static class Floxel
 		/* Resources dict = new();
 		Application.Current.Resources.MergedDictionaries.Add(dict);*/
 	}
-	
+
 	private static void UpdateWindows()
 	{
 		if (Application.Current.Resources["DarkMode"] is not bool themeMode) return;

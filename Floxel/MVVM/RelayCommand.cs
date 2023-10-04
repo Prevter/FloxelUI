@@ -16,11 +16,11 @@ public sealed class RelayCommand : Attribute, ICommand
 	public RelayCommand(Action<object?> execute) : this(execute, null)
 	{
 	}
-	
+
 	public RelayCommand(Action execute) : this(execute, null)
 	{
 	}
-	
+
 	public RelayCommand(Action<object?> execute, Predicate<object?>? canExecute)
 	{
 		_execute = execute ?? throw new ArgumentNullException(nameof(execute));

@@ -4,8 +4,8 @@ namespace FloxelPlayground.Pages;
 
 public partial class MessageBox : Page
 {
-    public MessageBox()
-    {
-        InitializeComponent();
-    }
+	public MessageBox()
+	{
+		InitializeComponent();
+	}
 }

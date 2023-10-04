@@ -12,7 +12,7 @@ public partial class Resources
 		AddResource("/Floxel;component/Styles/Styles.xaml");
 		Floxel.InitApplication();
 	}
-	
+
 	private void AddResource(string path)
 	{
 		Uri uri = new(path, UriKind.Relative);

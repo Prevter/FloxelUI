@@ -1,5 +1,4 @@
-﻿using FloxelLib;
-using System.Windows;
+﻿using System.Windows;
 
 namespace FloxelPlayground
 {

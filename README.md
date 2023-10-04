@@ -68,16 +68,24 @@ Floxel.SetTheme("C:/Users/MyUser/MyTheme.xaml", UrlKind.Absolute);
 ## MVVM utilities
 ### BaseViewModel
 `BaseViewModel` is a class that can be used to bind data to the UI. It implements the `INotifyPropertyChanged` interface, so you can use it to notify the UI when a property changes.  
+`UpdateProperty` is an attribute that can generate a property for your field.
 Here's an example of how to use it:
 ```csharp
 public class MyViewModel : BaseViewModel
 {
+    [UpdateProperty]
     private string _myText = "Hello World!";
-    public string MyText
+
+    [UpdateProperty("UpdateMyBool();")] // You can pass extra code to be executed when the property changes
+    private bool _myBool = true;
+
+    private void UpdateMyBool() 
     {
-        get => _myText;
-        set => SetField(ref _myText, value);
+        // Do something
     }
+
+    [UpdateProperty]
+    private int _myInt1, _myInt2 = 5; // You can also update multiple fields at once
 }
 ```
 ```xml

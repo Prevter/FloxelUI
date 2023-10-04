@@ -1,11 +1,7 @@
-﻿using System;
-using System.Runtime.InteropServices;
+﻿using Material.Icons;
+using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Interop;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using Material.Icons;
 
 namespace FloxelLib.Common
 {
@@ -24,11 +20,11 @@ namespace FloxelLib.Common
 		{
 			this.RemoveIcon();
 		}
-		
+
 		private void Init()
 		{
 			InitializeComponent();
-			
+
 			this.Title = Caption;
 			messageTextBlock.Text = Text;
 
@@ -59,14 +55,14 @@ namespace FloxelLib.Common
 			Text = message;
 			Init();
 		}
-		
+
 		public MessageBox(string message, string caption)
 		{
 			Text = message;
 			Caption = caption;
 			Init();
 		}
-		
+
 		public MessageBox(string message, string caption, MessageBoxImage icon)
 		{
 			Text = message;
@@ -95,7 +91,7 @@ namespace FloxelLib.Common
 			msgBox.ShowDialog();
 			return msgBox.Result;
 		}
-		
+
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
 			if (sender is not Control control) return;
