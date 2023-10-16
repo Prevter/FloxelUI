@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <version>1.0.7</version>
+    <version>1.0.7.1</version>
     <authors>Prevter</authors>
-    <licenseUrl>https://github.com/Prevter/FloxelUI/blob/master/LICENSE.md</licenseUrl>
+    <license type="expression">MIT</license>
     <projectUrl>https://github.com/Prevter/FloxelUI</projectUrl>
     <dependencies>
       <dependency id="Material.Icons" version="2.0.11"/>
@@ -15,6 +15,7 @@
     <summary>Material design toolkit for WPF with custom controls, MVVM and more</summary>
     <copyright>Copyright 2023 Prevter</copyright>
     <language>en-US</language>
+    <readme>README.md</readme>
   </metadata>
   <files>
     <file src="README.md" target="README.md" />
