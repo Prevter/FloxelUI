@@ -18,8 +18,11 @@
             <TextBox Text="{Binding MessageBoxTitle}"/>
             
             <TextBlock Text="Icon:"/>
-            <ComboBox SelectedItem="{Binding MessageBoxImage}" ItemsSource="{Binding MessageBoxImages}"/>
-            
+            <ComboBox SelectedItem="{Binding SelectedIcon}" ItemsSource="{Binding MessageBoxImages}"/>
+
+            <TextBlock Text="Buttons:"/>
+            <ComboBox SelectedItem="{Binding SelectedButton}" ItemsSource="{Binding MessageBoxButtons}"/>
+
             <Separator/>
             <StackPanel Orientation="Horizontal">
                 <Button Command="{Binding OpenMessageBoxCommand}" Content="OPEN" />

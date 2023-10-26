@@ -129,8 +129,8 @@ public class MyViewModel : BaseViewModel
 - [x] TabControl
 - [x] Button 
 - [x] ScrollBar
-- [ ] TextBox
-- [ ] CheckBox
+- [x] TextBox
+- [x] CheckBox
 - [ ] ComboBox
 - [ ] Slider
 - [ ] ProgressBar

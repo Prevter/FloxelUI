@@ -13,6 +13,9 @@ public sealed partial class MessageBoxViewModel : BaseViewModel
 	[UpdateProperty]
 	private MessageBoxImage _selectedIcon = MessageBoxImage.None;
 
+	[UpdateProperty]
+	private MessageBoxButton _selectedButton = MessageBoxButton.OK;
+
 	public List<MessageBoxImage> MessageBoxImages { get; } = new()
 	{
 		MessageBoxImage.None,
@@ -22,15 +25,23 @@ public sealed partial class MessageBoxViewModel : BaseViewModel
 		MessageBoxImage.Asterisk
 	};
 
+	public List<MessageBoxButton> MessageBoxButtons { get; } = new()
+	{
+        MessageBoxButton.OK,
+        MessageBoxButton.OKCancel,
+        MessageBoxButton.YesNo,
+		MessageBoxButton.YesNoCancel
+    };
+
 	[RelayCommand]
 	private void OpenMessageBox()
 	{
-		MessageBox.Show(_messageBoxMessage, _messageBoxTitle, _selectedIcon);
+		MessageBox.Show(_messageBoxMessage, _messageBoxTitle, _selectedButton, _selectedIcon);
 	}
 
 	[RelayCommand]
 	private void OpenDefaultMessageBox()
 	{
-		System.Windows.MessageBox.Show(_messageBoxMessage, _messageBoxTitle, MessageBoxButton.OK, _selectedIcon);
+		System.Windows.MessageBox.Show(_messageBoxMessage, _messageBoxTitle, _selectedButton, _selectedIcon);
 	}
 }

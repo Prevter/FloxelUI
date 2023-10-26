@@ -45,12 +45,10 @@ public sealed partial class ButtonViewModel : BaseViewModel
 		if (ButtonIcon)
 		{
 			ButtonCode += @$">
-    <Button.Content>
-        <StackPanel Orientation=""Horizontal"">
-            <fuic:Icon Kind=""Star"" Width=""18"" Margin=""0,0,4,0""/>
-            <TextBlock Text=""BUTTON""/>
-        </StackPanel>
-    </Button.Content>
+    <StackPanel Orientation=""Horizontal"">
+        <fuic:Icon Kind=""Star"" Width=""18"" Margin=""0,0,4,0""/>
+        <TextBlock Text=""BUTTON""/>
+    </StackPanel>
 </Button>";
 		}
 		else

@@ -7,7 +7,7 @@ using System.Windows.Media;
 namespace FloxelLib.Controls
 {
 	/// <summary>
-	/// Interaction logic for Icon.xaml
+	/// Interaction logic for Image.xaml
 	/// </summary>
 	public partial class Icon : Control
 	{
