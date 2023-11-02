@@ -7,7 +7,7 @@ It is also designed to be customizable, so you can change the colors and other t
 Library also comes with many utilities that make it easier to use WPF, such as a `RelayCommand` class that can be used to bind commands to buttons, and a `BaseViewModel` class that can be used to bind data to the UI. You can check full list of utilities in the [Features](#features) section.
 
 ## How do I use it?
-First, you'll need to reference the library in your project. You can do this by adding a nuget package to your project (currently, only local nuget package is available, check [releases](https://github.com/prevter/floxelui/releases) for more info).    
+First, you'll need to reference the library in your project. You can do this by adding the [Floxel nuget package](https://www.nuget.org/packages/Floxel/) to your project, or by building the project yourself and referencing the library.
 Then, you'll need to initialize the library. You can do this by adding a reference to the library in your `App.xaml` file.
 ```xml
 <Application x:Class="MyApp.App"
@@ -71,7 +71,7 @@ Floxel.SetTheme("C:/Users/MyUser/MyTheme.xaml", UrlKind.Absolute);
 `UpdateProperty` is an attribute that can generate a property for your field.
 Here's an example of how to use it:
 ```csharp
-public class MyViewModel : BaseViewModel
+public partial class MyViewModel : BaseViewModel
 {
     [UpdateProperty]
     private string _myText = "Hello World!";
@@ -97,7 +97,7 @@ Note that you can use `SetField` method to set the value of the field and notify
 In order to bind commands to buttons, you can use the `RelayCommand` class. It is a class that implements the `ICommand` interface, so you can use it to bind commands to buttons.  
 Here's an example of how to use it:
 ```csharp
-public class MyViewModel : BaseViewModel
+public partial class MyViewModel : BaseViewModel
 {
     [RelayCommand]
     private void Test(object arg) {
