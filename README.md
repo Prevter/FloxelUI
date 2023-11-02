@@ -131,7 +131,7 @@ public class MyViewModel : BaseViewModel
 - [x] ScrollBar
 - [x] TextBox
 - [x] CheckBox
-- [ ] ComboBox
+- [x] ComboBox
 - [ ] Slider
 - [ ] ProgressBar
 - more coming soon...

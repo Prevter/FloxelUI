@@ -21,7 +21,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <ComboBox FontSize="18" Margin="8,8"
+        <ComboBox Margin="8,8"
                   ItemsSource="{Binding Pages}" SelectedIndex="{Binding SelectedPageIndex}" />
 
         <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal" Margin="8,8" HorizontalAlignment="Right">

@@ -65,6 +65,15 @@
     <SolidColorBrush x:Key="RadioButtonNotSelected" Color="#b8b9ba"/>
     <SolidColorBrush x:Key="RadioButtonHoverBackground" Color="#3a9c27b0"/>
     <!-- ===== Radio Button ===== -->
-
     
+    <!-- ======= ComboBox ======= -->
+    <SolidColorBrush x:Key="ComboboxBackground" Color="#121212"/>
+    <SolidColorBrush x:Key="ComboboxForeground" Color="#ffffff"/>
+    <SolidColorBrush x:Key="ComboboxBorder" Color="#2fffffff"/>
+    <SolidColorBrush x:Key="ComboboxBackgroundHover" Color="#08ffffff"/>
+    <SolidColorBrush x:Key="ComboboxBackgroundDisabled" Color="#1f1f1f"/>
+    <SolidColorBrush x:Key="ComboboxForegroundDisabled" Color="#fafafa"/>
+    <SolidColorBrush x:Key="ComboboxBorderDisabled" Color="#25ffffff"/>
+    <!-- ======= ComboBox ======= -->
+
 </ResourceDictionary>

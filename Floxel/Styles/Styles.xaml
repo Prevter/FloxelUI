@@ -4,6 +4,7 @@
         <ResourceDictionary Source="Button.xaml"/>
         <ResourceDictionary Source="Card.xaml"/>
         <ResourceDictionary Source="CheckBox.xaml"/>
+        <ResourceDictionary Source="ComboBox.xaml"/>
         <ResourceDictionary Source="RadioButton.xaml"/>
         <ResourceDictionary Source="ScrollBar.xaml"/>
         <ResourceDictionary Source="TabControl.xaml"/>
