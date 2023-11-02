@@ -4,8 +4,8 @@ namespace FloxelPlayground.Pages;
 
 public partial class Scrollbar : Page
 {
-	public Scrollbar()
-	{
-		InitializeComponent();
-	}
+    public Scrollbar()
+    {
+        InitializeComponent();
+    }
 }

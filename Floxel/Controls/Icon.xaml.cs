@@ -6,62 +6,62 @@ using System.Windows.Media;
 
 namespace FloxelLib.Controls
 {
-	/// <summary>
-	/// Interaction logic for Image.xaml
-	/// </summary>
-	public partial class Icon : Control
-	{
-		public Icon()
-		{
-			InitializeComponent();
-		}
+    /// <summary>
+    /// Interaction logic for Image.xaml
+    /// </summary>
+    public partial class Icon : Control
+    {
+        public Icon()
+        {
+            InitializeComponent();
+        }
 
-		static Icon()
-		{
-			DefaultStyleKeyProperty.OverrideMetadata(typeof(Icon), new FrameworkPropertyMetadata(typeof(Icon)));
-		}
+        static Icon()
+        {
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(Icon), new FrameworkPropertyMetadata(typeof(Icon)));
+        }
 
-		public static readonly DependencyProperty KindProperty
-			= DependencyProperty.Register(nameof(Kind), typeof(MaterialIconKind), typeof(Icon),
-				new PropertyMetadata(default(MaterialIconKind), KindPropertyChangedCallback));
+        public static readonly DependencyProperty KindProperty
+            = DependencyProperty.Register(nameof(Kind), typeof(MaterialIconKind), typeof(Icon),
+                new PropertyMetadata(default(MaterialIconKind), KindPropertyChangedCallback));
 
-		private static void KindPropertyChangedCallback(DependencyObject dependencyObject,
-														DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
-			=> ((Icon)dependencyObject).UpdateData();
+        private static void KindPropertyChangedCallback(DependencyObject dependencyObject,
+                                                        DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
+            => ((Icon)dependencyObject).UpdateData();
 
-		/// <summary>
-		/// Gets or sets the icon to display.
-		/// </summary>
-		public MaterialIconKind Kind
-		{
-			get => (MaterialIconKind)GetValue(KindProperty);
-			set => SetValue(KindProperty, value);
-		}
+        /// <summary>
+        /// Gets or sets the icon to display.
+        /// </summary>
+        public MaterialIconKind Kind
+        {
+            get => (MaterialIconKind)GetValue(KindProperty);
+            set => SetValue(KindProperty, value);
+        }
 
-		private static readonly DependencyPropertyKey DataPropertyKey
-			= DependencyProperty.RegisterReadOnly(nameof(Data), typeof(string), typeof(Icon), new PropertyMetadata(""));
+        private static readonly DependencyPropertyKey DataPropertyKey
+            = DependencyProperty.RegisterReadOnly(nameof(Data), typeof(string), typeof(Icon), new PropertyMetadata(""));
 
-		public static readonly DependencyProperty DataProperty = DataPropertyKey.DependencyProperty;
+        public static readonly DependencyProperty DataProperty = DataPropertyKey.DependencyProperty;
 
-		/// <summary>
-		/// Gets the icon path data for the current <see cref="Kind"/>.
-		/// </summary>
-		[TypeConverter(typeof(GeometryConverter))]
-		public string? Data
-		{
-			get => (string?)GetValue(DataProperty);
-			private set => SetValue(DataPropertyKey, value);
-		}
+        /// <summary>
+        /// Gets the icon path data for the current <see cref="Kind"/>.
+        /// </summary>
+        [TypeConverter(typeof(GeometryConverter))]
+        public string? Data
+        {
+            get => (string?)GetValue(DataProperty);
+            private set => SetValue(DataPropertyKey, value);
+        }
 
-		public override void OnApplyTemplate()
-		{
-			base.OnApplyTemplate();
-			UpdateData();
-		}
+        public override void OnApplyTemplate()
+        {
+            base.OnApplyTemplate();
+            UpdateData();
+        }
 
-		private void UpdateData()
-		{
-			Data = MaterialIconDataProvider.GetData(Kind);
-		}
-	}
+        private void UpdateData()
+        {
+            Data = MaterialIconDataProvider.GetData(Kind);
+        }
+    }
 }

@@ -4,5 +4,5 @@ namespace FloxelLib;
 
 public class DarkTheme : Theme
 {
-	public DarkTheme() : base("DarkTheme") { }
+    public DarkTheme() : base("DarkTheme") { }
 }

@@ -2,8 +2,8 @@
 
 public class Window : System.Windows.Window
 {
-	public Window()
-	{
-		Floxel.InitWindow(this);
-	}
+    public Window()
+    {
+        Floxel.InitWindow(this);
+    }
 }

@@ -4,8 +4,8 @@ namespace FloxelPlayground.Pages;
 
 public partial class SpinningCircle : Page
 {
-	public SpinningCircle()
-	{
-		InitializeComponent();
-	}
+    public SpinningCircle()
+    {
+        InitializeComponent();
+    }
 }
